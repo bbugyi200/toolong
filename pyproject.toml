@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "toobig"
-version = "0.0.0"
+version = "0.1.0"
 description = "Keep source files small enough for humans and coding agents"
 readme = "README.md"
 requires-python = ">=3.10"
