@@ -12,5 +12,3 @@
 ### Documentation
 
 * write the project guide (sase-5r.2) ([2322c7c](https://github.com/bbugyi200/toobig/commit/2322c7c45ee4181ad4f3b608f505c9f19e5496ba))
-
-## Changelog
