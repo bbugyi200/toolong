@@ -2,12 +2,13 @@
 
 venv_dir := ".venv"
 venv_bin := venv_dir / "bin"
+python := env_var_or_default("TOOLONG_PYTHON", "3.10")
 
 default:
     @just --list
 
 _venv:
-    @[ -x {{ venv_bin }}/python ] || uv venv --python 3.10 {{ venv_dir }}
+    @[ -x {{ venv_bin }}/python ] || uv venv --python {{ python }} {{ venv_dir }}
 
 install: _venv
     uv pip install --python {{ venv_bin }}/python -e ".[dev]"
